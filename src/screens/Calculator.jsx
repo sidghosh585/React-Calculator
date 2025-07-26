@@ -18,14 +18,7 @@ function Calculator(){
         }
         else if(value==="c")
         {
-            if(data.length===1)
-            {
-                setData("0");
-            }
-            else
-            {
-                setData(data.slice(0,-1));
-            }
+            setData(data.length === 1 ? "0" : data.slice(0, -1));
         }
         else if(value==="(1/x)")
         {
